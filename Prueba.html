@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta autor="Alejandro Lorenzo Méndez">
+  <style type="text/css">
+form label {
+    display: inline-block;
+    width: 120px;
+}
+form labelB {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
+</style>
+</head>
+<body>
+<form>
+<fieldset> 
+    <legend>FORM VALIDATION </legend>
+    <p>    
+       <label> Name:</label>
+       <input type="text" name="nombre" size="25" >
+    </p>
+    <p>      
+       <label> Username:  </label> 
+       <input type="text" name="nombre" size="25" required >       
+    </p>
+    <p>
+       <label> Password: </label>  
+        <input type="password" name="contraseña" size="25" required maxlength="12">    
+    </p>
+    <p>    
+      <label> Re-type password:</label>
+       <input type="password" name="nombre" size="25" required maxlength="12">   
+    </p>
+    <p>
+      <label>Gender:  </label>
+       <input type="radio" name="Gender"> Male 
+       <input type="radio" name="Gender"> Female 
+       <input type="radio" name="Gender"> Other    
+    </p>
+    <p>
+      <label> Programming skills:  </label>
+            <input type="checkbox" name="Languaje"> Java
+            <input type="checkbox" name="Languaje"> Android
+            <input type="checkbox" name="Languaje"> Ruby
+            <input type="checkbox" name="Languaje"> .NET
+    </p>
+    <p>      
+      <label> Contact No:</label>
+       <input type="number" name="phone" size="25" pattern="[0-9]{9}" maxlength="9" title="Solo puedes escribir numeros">     
+    </p>
+    <p>
+	 <label> Email: </label>
+	 <input type="email" name="mail" size ="25">			
+    </p>
+    <p> 
+    <label>College:</label>	
+      <select name="college">
+       <option value="Montecastelo">Montecastelo</option>
+       <option value="Acacias">Acacias</option>
+       <option value="Lope De Vega">Lope De Vega</option>
+      </select>
+    </p>
+    <p>
+	    <input type="submit" value="Submit">
+    </p>
+    </fieldset>
+
+
+
+    <fieldset>
+    <p>    
+       <labelB> Name</labelB>
+       <input type="text" name="nombre" size="25" >
+    </p>
+    <p>    
+       <labelB> Age</labelB>
+       <input type="number" name="age" size="25" >
+    </p>
+    <p>    
+       <labelB> Birth Date</labelB>
+       <input type="text" name="birth" size="25" pattern="([0-9]{4})-([0-9]{2})-([0-9]{2})" maxlength="10" placeholder="YYYY-MM-DD" >
+    </p>
+    <p>    
+       <labelB> Email </labelB>
+	   <input type="email" name="mail" size ="25">
+	 </p>
+	<p> 
+    <labelB>Continent</labelB>	
+      <select name="continent">
+       <option value="" disabled selected>--Please Select--</option>
+       <option value="Asia">Asia</option>
+       <option value="Africa">Africa</option>
+       <option value="North America">North America</option>
+       <option value="South America">South America</option>
+       <option value="Europe">Europe</option>
+       <option value="Antarctica">Antarctica</option>
+       <option value="Australia">Australia</option>
+      </select>
+    </p>
+    <p>
+      <labelB>Are You Cool? </labelB>
+       <input type="radio" name="QuestionCool"> Yes 
+       <input type="radio" name="QuestionCool"> No   
+    </p>
+    <p> 
+    <labelB>What 2 color do you like?</labelB>	
+      <select name="continent" >
+
+       <option value="Red">Red</option>
+       <option value="Orange">Orange</option>
+       <option value="Yellow">Yellow</option>
+       <option value="Green">Green</option>
+      </select>
+    </p>
+    <p>
+      <labelB> What Do You Like? </labelB>
+            <input type="checkbox" name="Question"> CodeIgniter
+            <input type="checkbox" name="Question"> Fuel
+            <input type="checkbox" name="Question"> Kohana
+            <input type="checkbox" name="Question"> Laravel
+            <input type="checkbox" name="Question"> Zend
+    </p>
+    <p>
+	    <input type="submit" value="Submit">
+    </p>
+    </fieldset>
+</form>
+</body>
+</html>
